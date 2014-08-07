@@ -512,6 +512,7 @@ static void vHandleSerialInput(void)
 
 		switch(i16Char) {
 
+
 		case '>': case '.':
 			/* channel up */
 			sAppData.u8channel++;
