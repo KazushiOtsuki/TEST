@@ -505,6 +505,7 @@ static void vHandleSerialInput(void)
 	while (!SERIAL_bRxQueueEmpty(sSerPort.u8SerialPort)) {
 		int16 i16Char;
 
+
 		i16Char = SERIAL_i16RxChar(sSerPort.u8SerialPort);
 
 		vfPrintf(&sSerStream, "\n\r# [%c] --> ", i16Char);
